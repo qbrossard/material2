@@ -337,7 +337,7 @@ describe('MatDialog', () => {
     expect(spy).toHaveBeenCalled();
   });
 
-  it('should should override the width of the overlay pane', () => {
+  it('should override the width of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       width: '500px'
     });
@@ -349,7 +349,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.width).toBe('500px');
   });
 
-  it('should should override the height of the overlay pane', () => {
+  it('should override the height of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       height: '100px'
     });
@@ -361,7 +361,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.height).toBe('100px');
   });
 
-  it('should should override the min-width of the overlay pane', () => {
+  it('should override the min-width of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       minWidth: '500px'
     });
@@ -373,7 +373,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.minWidth).toBe('500px');
   });
 
-  it('should should override the max-width of the overlay pane', fakeAsync(() => {
+  it('should override the max-width of the overlay pane', fakeAsync(() => {
     let dialogRef = dialog.open(PizzaMsg);
 
     viewContainerFixture.detectChanges();
@@ -400,7 +400,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.maxWidth).toBe('100px');
   }));
 
-  it('should should override the min-height of the overlay pane', () => {
+  it('should override the min-height of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       minHeight: '300px'
     });
@@ -412,7 +412,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.minHeight).toBe('300px');
   });
 
-  it('should should override the max-height of the overlay pane', () => {
+  it('should override the max-height of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       maxHeight: '100px'
     });
@@ -424,7 +424,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.maxHeight).toBe('100px');
   });
 
-  it('should should override the top offset of the overlay pane', () => {
+  it('should override the top offset of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       position: {
         top: '100px'
@@ -438,7 +438,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.marginTop).toBe('100px');
   });
 
-  it('should should override the bottom offset of the overlay pane', () => {
+  it('should override the bottom offset of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       position: {
         bottom: '200px'
@@ -452,7 +452,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.marginBottom).toBe('200px');
   });
 
-  it('should should override the left offset of the overlay pane', () => {
+  it('should override the left offset of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       position: {
         left: '250px'
@@ -466,7 +466,7 @@ describe('MatDialog', () => {
     expect(overlayPane.style.marginLeft).toBe('250px');
   });
 
-  it('should should override the right offset of the overlay pane', () => {
+  it('should override the right offset of the overlay pane', () => {
     dialog.open(PizzaMsg, {
       position: {
         right: '125px'
